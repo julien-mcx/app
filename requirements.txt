@@ -1,2 +1,5 @@
 streamlit
 naas_drivers
+gspread
+oauth2client
+pandas
