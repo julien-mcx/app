@@ -22,5 +22,5 @@ client = gspread.authorize(credentials)
 sheet.share('your_email_goes_here', perm_type='user', role='writer')
 
 
-sheet = client.open("QuestionsFinancedeMarché").sheet1
+sheet = client.open("Questions").sheet1
 st.write(sheet)
