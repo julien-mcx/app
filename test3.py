@@ -18,5 +18,9 @@ scope = ['https://www.googleapis.com/auth/spreadsheets',
 credentials = ServiceAccountCredentials.from_json_keyfile_name("streamlit1202-240ada1c5101.json", scope)
 client = gspread.authorize(credentials)
 
+
+sheet.share('your_email_goes_here', perm_type='user', role='writer')
+
+
 sheet = client.open("QuestionsFinancedeMarché").sheet1
 st.write(sheet)
