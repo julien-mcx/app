@@ -37,7 +37,7 @@ print(sh.sheet1.get('A1')
 
 
 # sh = client.open_by_url('https://docs.google.com/spreadsheets/d/1yQCZqRweD7FLCAEFZagH00WmSQ1Pb8iVWTTnC6X3jLM/edit#gid=452671349') # Open by URL
-st.write(sh)
+# st.write(sh)
 
 # worksheet = client.get_worksheet(0) # Select worksheet by index
 
