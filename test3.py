@@ -25,8 +25,9 @@ Sheet = client.open_by_key("1HMZGbomaWzYrg3V0Hx3sRvmL6g3EFOMRac_ZbrRC32Y").sheet
 sheet = client.create("NewDatabase")
 st.write(sheet)
 
-gc = authenticate_google_docs()
-sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1yQCZqRweD7FLCAEFZagH00WmSQ1Pb8iVWTTnC6X3jLM/edit#gid=452671349') # Open by URL
-worksheet = sh.get_worksheet(0) # Select worksheet by index
+sh = client.open_by_url('https://docs.google.com/spreadsheets/d/1yQCZqRweD7FLCAEFZagH00WmSQ1Pb8iVWTTnC6X3jLM/edit#gid=452671349') # Open by URL
+st.write(sh)
+
+worksheet = client.get_worksheet(0) # Select worksheet by index
 
 
