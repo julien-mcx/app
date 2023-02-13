@@ -20,7 +20,7 @@ client = gspread.authorize(credentials)
 
 # client.open("QuestionsFinancedeMarché").sheet1
 Sheet = client.open_by_key("1HMZGbomaWzYrg3V0Hx3sRvmL6g3EFOMRac_ZbrRC32Y").sheet1
-st.write(Sheet)
+st.write(Sheet.shape[0])
 
 sheet = client.create("NewDatabase")
 st.write(sheet)
