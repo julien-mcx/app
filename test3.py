@@ -17,10 +17,3 @@ scope = ['https://www.googleapis.com/auth/spreadsheets',
 
 credentials = ServiceAccountCredentials.from_json_keyfile_name("streamlit1202-240ada1c5101.json", scope)
 client = gspread.authorize(credentials)
-
-
-gc = gspread.service_account()
-
-sh = gc.open("QuestionsFinancedeMarché")
-st.write(sh.sheet1.get('A1')
-
