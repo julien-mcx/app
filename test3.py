@@ -17,8 +17,7 @@ import pandas as pd
 
 # credentials = ServiceAccountCredentials.from_json_keyfile_name("streamlit1202-240ada1c5101.json", scope)
 # client = gspread.authorize(credentials)
-
-{
+credentials = {
   "type": "service_account",
   "project_id": "streamlit1202",
   "private_key_id": "240ada1c5101212633493cb72fb206e958b37f87",
