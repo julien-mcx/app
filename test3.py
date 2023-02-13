@@ -22,7 +22,7 @@ client = gspread.authorize(credentials)
 gc = gspread.service_account()
 
 sh = gc.open("QuestionsFinancedeMarché")
-print(sh.sheet1.get('A1')
+st.write(sh.sheet1.get('A1')
 
 
 
