@@ -31,7 +31,7 @@ credentials = {
 }
 
 gc = gspread.service_account_from_dict(credentials)
+sh = gc.create('A new spreadsheet')
 
-sh = gc.open("QuestionsFinancedeMarché")
+sh.share('otto@example.com', perm_type='user', role='writer')
 
-print(sh.sheet1.get('A1'))
