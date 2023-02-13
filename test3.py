@@ -11,12 +11,16 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 
-# Connect to Google Sheets
-scope = ['https://www.googleapis.com/auth/spreadsheets',
-         "https://www.googleapis.com/auth/drive"]
+# # Connect to Google Sheets
+# scope = ['https://www.googleapis.com/auth/spreadsheets',
+#          "https://www.googleapis.com/auth/drive"]
 
 credentials = ServiceAccountCredentials.from_json_keyfile_name("streamlit1202-240ada1c5101.json", scope)
 client = gspread.authorize(credentials)
+
+client.open("QuestionsFinancedeMarché").sheet1
+client.open_by_key("1HMZGbomaWzYrg3V0Hx3sRvmL6g3EFOMRac_ZbrRC32Y").sheet1
+
 
 sheet = client.create("NewDatabase")
 st.write(sheet)
