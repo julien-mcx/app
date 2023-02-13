@@ -19,7 +19,8 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name("streamlit1202-24
 client = gspread.authorize(credentials)
 
 # client.open("QuestionsFinancedeMarché").sheet1
-client.open_by_key("1HMZGbomaWzYrg3V0Hx3sRvmL6g3EFOMRac_ZbrRC32Y").sheet1
+Sheet = client.open_by_key("1HMZGbomaWzYrg3V0Hx3sRvmL6g3EFOMRac_ZbrRC32Y").sheet1
+st.write(Sheet)
 
 sheet = client.create("NewDatabase")
 st.write(sheet)
