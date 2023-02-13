@@ -25,7 +25,7 @@ client = gspread.authorize(credentials)
 # sheet = client.create("NewDatabase")
 # st.write(sheet)
 
-sh = client.open(Commentaires") # Open by name
+sh = client.open("Commentaires") # Open by name
 
 
 # sh = client.open_by_url('https://docs.google.com/spreadsheets/d/1yQCZqRweD7FLCAEFZagH00WmSQ1Pb8iVWTTnC6X3jLM/edit#gid=452671349') # Open by URL
